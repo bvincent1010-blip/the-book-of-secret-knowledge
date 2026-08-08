@@ -1,4 +1,102 @@
-clear<p align="center">
+{
+  "identifier": {
+    "accounts": [
+      {
+        "module": {
+          "id": "5f9a...",
+          "name": "google",
+          "name_formatted": "Google",
+          "domain": "google.com",
+          "type": 0
+        },
+        "data": {
+          "id": "1178...",
+          "username": "targetuser",
+          "full_name": "Target User",
+          "avatar_url": "https://.../photo.jpg"
+        }
+      }
+    ]
+  },
+  "validator": {
+    "registered": [
+      { "id": "…", "name": "spotify", "name_formatted": "Spotify", "domain": "spotify.com", "type": 1 }
+    ],
+    "unregistered": [
+      { "id": "…", "name": "duolingo", "name_formatted": "Duolingo", "domain": "duolingo.com", "type": 1 }
+    ]
+  },
+  "data_breaches": {
+    "amount": 3,
+    "sources": 2,
+    "results": [
+      {
+        "email": "target@example.com",
+        "password": "hunter2",
+        "username": "targetuser",
+        "full_name": "Target User",
+        "ip_address": "203.0.113.9",
+        "phone_number": "",
+        "hash": "",
+        "source": { "name": "ExampleBreach", "date": "2021-06" }
+      }
+    ],
+    "redacted": false
+  },
+  "stealer_logs": {
+    "count": 1,
+    "results": [
+      { "data_type": "stealerlog", "origin": "https://accounts.google.com", "login": "target@example.com", "password": "hunter2" }
+    ],
+    "has_stealer_log_type": true,
+    "redacted": false,
+    "compromised": true
+  },
+  "stealer_enrichment": {
+    "autofill": [
+      {
+        "tag": "email",
+        "label": "Email",
+        "total": 4,
+        "unique": 2,
+        "values": [
+          { "value": "target@example.com", "count": 3 },
+          { "value": "target.user@work.com", "count": 1 }
+        ]
+      }
+    ],
+    "accounts": [
+      {
+        "platform": "instagram.com",
+        "value": "target@example.com",
+        "kind": "username",
+        "source": "credential",
+        "id_link": "https://instagram.com/username"
+      }
+    ],
+    "user_info": {
+      "username": "targetuser",
+      "ip_address": "203.0.113.9",
+      "country": "US",
+      "location": "New York, NY",
+      "zip_code": "10001"
+    },
+    "scanned_files": 128,
+    "posted_at": "2025-02-14T00:00:00Z",
+    "realtime": false,
+    "redacted": false
+  },
+  "meta": {
+    "email"takishawilkerson2@gmail.com,
+    "first_seen": "2016-04-12T00:00:00Z",
+    "last_seen": "2023-09-01T00:00:00Z",
+    "cloaked": false,
+    "timeline": [
+      { "source": "creation_date", "name": "Google", "date": "2016-04-12T00:00:00Z" },
+      { "source": "data_breach", "name": "ExampleBreach", "date": "2021-06-01T00:00:00Z" }
+    ]
+  }
+}clear<p align="center">
   <a href="https://github.com/trimstray/the-book-of-secret-knowledge">
     <img src="https://github.com/trimstray/the-book-of-secret-knowledge/blob/master/static/img/the-book-of-secret-knowledge-preview.png" alt="Master">
   </a>
